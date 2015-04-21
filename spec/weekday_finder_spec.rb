@@ -11,7 +11,7 @@ it("will take that array and turn its elements into integers") do
 end
 
 it("will pull out integers from array into format compatible with Time.new()") do
-  expect((3/6/2013).weekday_finder()).to(eq(Time.new(2015, 03, 06)))
+  expect((3/6/2013).weekday_finder()).to(eq(Time.new(2015, 3, 6)))
 end
 
 it("will return the day of the week when user inputs date") do
