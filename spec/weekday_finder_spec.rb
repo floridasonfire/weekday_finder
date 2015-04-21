@@ -1,10 +1,10 @@
 require ('rspec')
 require ('weekday_finder.rb')
 
-describe('Time#weekday_finder') do
+describe('String#weekday_finder') do
 
 it("will change a date input in the form of 1/1/1111 to an array in the form of ['1', '1', '1111']") do
-  expect((4/21/2015).weekday_finder()).to(eq(["4", "21", "2015" ]))
+  expect(("4/21/2015").weekday_finder()).to(eq(["4", "21", "2015" ]))
 end
 it("will take that array and turn its elements into integers") do
   expect((3/6/2014).weekday_finder()).to(eq([3, 6, 2014]))
